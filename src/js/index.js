@@ -51,7 +51,6 @@ async function onInputChange(ev) {
 }
 
 function createCountryInfo(country) {
-  console.log(country);
   const languagesList = country.languages.map(lang => lang.name).join(', ');
 
   countryInfoEl.innerHTML = `
@@ -69,8 +68,6 @@ function createCountryInfo(country) {
 }
 
 function createCountriesList(countries) {
-  console.log(countries);
-
   countryListEl.innerHTML = countries.reduce((htmlStr, country) => {
     htmlStr += `
       <li>
